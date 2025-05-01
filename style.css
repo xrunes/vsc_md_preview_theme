@@ -1,0 +1,193 @@
+/*  Dracula Theme for VS Code's shipped Markdown Preview
+ *
+ * https://github.com/zenorocha/dracula-theme
+ *
+ * Copyright 2021, All rights reserved
+ *
+ * Code licensed under the MIT license
+ * http://zenorocha.mit-license.org
+ *
+ * @author George Pickering <@bigpick>
+ */
+
+/* Dracula colors */
+:root {
+    --background: #282a36;
+    --current-line: #44475a;
+    --foreground: #f8f8f2;
+    --comment: #6272a4;
+    --cyan: #8be9fd;
+    --green: #50fa7b;
+    --orange: #ffb86c;
+    --pink: #ff79c6;
+    --purple: #bd93f9;
+    --red: #ff5555;
+    --yellow: #f1fa8c;
+}
+
+html {
+    width: 880px;
+    padding: 45px;
+    margin-top: 25px;
+    margin-bottom: 125px;
+}
+
+body {
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+    line-height: 1.3;
+    color: var(--foreground);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    font-size: 15px;
+    line-height: 1.5;
+    word-wrap: break-word;
+}
+
+a {
+    color: var(--cyan);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: 600;
+    color: var(--purple);
+}
+
+::selection {
+    color: var(--foreground);
+    background-color: var(--pink)
+}
+
+pre code {
+    color: var(--foreground);
+    background-color: var(--background);
+}
+
+code {
+    color: var(--foreground);
+    background-color: var(--background);
+}
+
+table>thead>tr>th {
+    border-color: var(--current-line);
+}
+
+h1,
+hr,
+table>tbody>tr+tr>td {
+    border-color: var(--current-line);
+}
+
+blockquote {
+    color: var(--current-line);
+    font-style: italic;
+    background: transparent;
+    border-color: var(--current-line);
+}
+
+strong {
+    color: var(--orange);
+    font-weight: 700;
+}
+
+mark {
+    color: var(--forground) !important;
+    background-color: var(--background) !important;
+    padding-top: 1px;
+    padding-bottom: 1px;
+}
+
+ul ul::before {
+    left: 0px;
+    top: 0;
+    bottom: 0;
+}
+
+ol {
+    display: block;
+    list-style-type: decimal;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 40px;
+}
+
+
+/* Code block syntax highlighting via Dracula theme for highlightJS
+*
+* https://raw.githubusercontent.com/dracula/highlightjs/master/dracula.css
+* ... Would be nice to not have to duplicate this whole thing,
+*     but can't get import to work in VS Code :\
+*/
+.hljs {
+    display: block;
+    overflow-x: auto;
+    padding: 0.5em;
+    background: #282a36;
+}
+
+.hljs-built_in,
+.hljs-selector-tag,
+.hljs-section,
+.hljs-link {
+    color: #8be9fd;
+}
+
+.hljs-keyword {
+    color: #ff79c6;
+}
+
+.hljs,
+.hljs-subst {
+    color: #f8f8f2;
+}
+
+.hljs-title {
+    color: #50fa7b;
+}
+
+.hljs-string,
+.hljs-meta,
+.hljs-name,
+.hljs-type,
+.hljs-attr,
+.hljs-symbol,
+.hljs-bullet,
+.hljs-addition,
+.hljs-variable,
+.hljs-template-tag,
+.hljs-template-variable {
+    color: #f1fa8c;
+}
+
+.hljs-comment,
+.hljs-quote,
+.hljs-deletion {
+    color: #6272a4;
+}
+
+.hljs-keyword,
+.hljs-selector-tag,
+.hljs-literal,
+.hljs-title,
+.hljs-section,
+.hljs-doctag,
+.hljs-type,
+.hljs-name,
+.hljs-strong {
+    font-weight: bold;
+}
+
+.hljs-literal,
+.hljs-number {
+    color: #bd93f9;
+}
+
+.hljs-emphasis {
+    font-style: italic;
+}
