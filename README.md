@@ -2,6 +2,8 @@
 
 VSCode Markdown Preview Dracula Theme
 
+![screenshot.png](./screenshot.png)
+
 ## How to use
 
 Search **Markdown:Styles** in setting, add `https://cdn.jsdelivr.net/gh/xrunes/vsc_md_preview_theme/style.css`.
