@@ -20,6 +20,12 @@ Or modify **setting.json**, add
 
 镜像站作者的[博客](https://www.codeqihan.com/post/zi-zhi-de-yi-ge-jsdelivr-jing-xiang-fen-xiang/)
 
+## BUGs / 目前存在的问题
+
+Currently, this CSS is only recommended for use the dark VSCode theme. Because in light themes, VSCode will automatically change elements such as fonts, scroll bars, and underlines to black. This CSS also has a dark background, which is extremely difficult to recognize. Therefore, it is not recommended. I am currently thinking of a solution.
+
+目前仅推荐在深色（暗色）VSCode主题下使用本CSS。因为在浅色（亮色）主题下，VSCode会自动将字体、滚动条、下划线等元素改成黑色，本CSS也是暗色背景，极难辨认，故不推荐，正在想解决方法。
+
 ## Attention
 
 - **markdown.styles** only support positive path, DO NOT support absolute path. This is why I use online URL.
