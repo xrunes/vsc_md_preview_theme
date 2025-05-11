@@ -48,6 +48,11 @@ code {
     background: #282A36;
 }
 
+/*代码块字体*/
+code, pre {
+	font-family: 'Maple Mono NL NF CN';
+}
+
 /*粗体
  *https://spec.draculatheme.com/#MarkupBold
  */
